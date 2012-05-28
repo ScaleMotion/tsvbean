@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface Field {
+public @interface SerializableField {
     public String name() default "";
     public Class<? extends DataType> type() default DataType.class;
     public boolean required() default false;
